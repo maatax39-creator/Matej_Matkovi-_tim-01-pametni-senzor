@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="hr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MPR - simulacija temperature</title>
+<style>body{font:20px Verdana,sans-serif;max-width:850px;margin:60px auto;padding:24px;color:#26364c;background:#f5f7fa}h1{font-size:32px}label{display:block;margin:24px 0 12px}input,button{font:inherit;padding:12px}button{background:#f47a38;border:0;border-radius:4px;cursor:pointer}#result{padding:24px;background:white;border-left:6px solid #f47a38;min-height:55px}small{display:block;margin:24px 0;font-size:15px}</style>
+<h1>Provjera temperature</h1>
+<p>Simulacija: temperaturu unosite ručno. Fizički senzor nije povezan.</p>
+<p>Prag upozorenja: strogo iznad 28 °C. Valjan raspon: -40 do 85 °C.</p>
+<label for="temperature">Temperatura u °C</label>
+<input id="temperature" type="text" inputmode="decimal" value="30" autocomplete="off">
+<button id="check" type="button">Provjeri temperaturu</button>
+<p id="result" role="status" aria-live="polite">Unesite vrijednost i pokrenite provjeru.</p>
+<small>Inačica: pogreska-prag (namjerno neispravna za tutorial 08). Upozorenje se prema zahtjevu mora prikazati najkasnije pet sekundi nakon klika.</small>
+<script src="app.js"></script></html>
